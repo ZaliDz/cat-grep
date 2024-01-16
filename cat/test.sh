@@ -1,0 +1,10 @@
+diff <(cat -b "test_files/test1.txt" "test_files/test2.txt") <(./s21_cat -b "test_files/test1.txt" "test_files/test2.txt") -s
+diff <(cat -b "test_files/test1.txt" "test_files/test2.txt") <(./s21_cat --number-nonblank "test_files/test1.txt" "test_files/test2.txt") -s
+diff <(cat -ev "test_files/test1.txt" "test_files/test2.txt") <(./s21_cat -ev "test_files/test1.txt" "test_files/test2.txt") -s
+diff <(cat -e "test_files/test1.txt" "test_files/test2.txt") <(./s21_cat -E "test_files/test1.txt" "test_files/test2.txt") -s
+diff <(cat -n "test_files/test1.txt" "test_files/test2.txt") <(./s21_cat -n "test_files/test1.txt" "test_files/test2.txt") -s
+diff <(cat -n "test_files/test1.txt" "test_files/test2.txt") <(./s21_cat --number "test_files/test1.txt" "test_files/test2.txt") -s
+diff <(cat -s "test_files/test1.txt" "test_files/test2.txt") <(./s21_cat -s "test_files/test1.txt" "test_files/test2.txt") -s
+diff <(cat -s "test_files/test1.txt" "test_files/test2.txt") <(./s21_cat --squeeze-blank "test_files/test1.txt" "test_files/test2.txt") -s
+diff <(cat -tv "test_files/test1.txt" "test_files/test2.txt") <(./s21_cat -tv "test_files/test1.txt" "test_files/test2.txt") -s
+diff <(cat -t "test_files/test1.txt" "test_files/test2.txt") <(./s21_cat -T "test_files/test1.txt" "test_files/test2.txt") -s
